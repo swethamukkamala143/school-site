@@ -1,0 +1,413 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.8">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+
+.content {
+  background-color: #F4D03F;
+  padding: 30px;
+  text-align: left;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #E7E8F2;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #C4C5DE;
+  color: black;
+}
+
+#navbar a.active {
+   background-color:  #AEB6BF;
+  color: #0B0D4A;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+ 
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+ border: 1px solid #000000;
+
+}
+
+
+
+.image2 {
+  position: relative;
+  top: -500;
+  left: 970;
+ height: 200;
+border-radius:o;
+}
+
+.text1 {
+font-family: "Fantasy", bold,Lucida Handwriting;
+position: absolute;
+top: 33%;
+left: 80%;
+transform: translate(-70%, -50%);
+color: #330066;
+font-size: 20px;
+text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 19.88%;
+  padding: 5px;
+height: 50%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.text {
+font-family: "Fantasy", bold,Lucida Handwriting;
+color: purple;
+font-size: 30px;
+text-align: justify;
+}
+
+
+.text2 {
+font-family: Bookman;
+color: Black;
+font-size: 24px;
+text-align: justify;
+}
+
+
+
+
+
+ 
+
+
+
+ * {
+      margin: 0;
+      text-decoration: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      width: 100%;
+      height: auto;
+    }
+
+    .container {
+      max-width: 1190px;
+      margin: auto;
+    }
+
+    .cards-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 90px;
+      margin-top: 100px;
+    }
+
+    .card {
+      min-width: 300px;
+      max-width: 300px;
+      background-color: #EEEEEE;
+      padding: 2rem;
+    }
+
+    .img-wrapper {
+      margin-top: -60px;
+      width: 300px;
+      height: 200px;
+    }
+
+    img {
+      width: 79%;
+      height: 79%;
+      object-fit: cover;
+    }
+
+    .card-content {
+     min-width: 100%;
+      margin-top: 30px;
+    }
+
+    .ul-list{
+      font-size: 22px;
+      padding: 0px 0px 0px 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      color:black;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 22px;
+      margin-top: 20px;
+      color:black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .card-sub-title {
+      font-size: 18px;
+      margin-top: 10px;
+      color:black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #ffc33d;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      padding: .8rem;
+    }
+
+
+
+
+
+    
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="./Images/orchid logo 1.jpeg" alt=" logo" style="width:50%">
+</div>
+
+<div id="navbar">
+  <a href="./Project Website.html">Home</a>
+  <a href="./News & Updates.html">Our Schools</a>
+  <a href="./News & Updates.html">News & updates</a>
+<a class="active" href="./Alumni Stories.html">Alumni Stories</a>
+<a href="./Contact us.html">Contact Us</a>
+<a href="./Admissions.html">Admissions</a>
+</div>
+
+
+<div class="parent">
+<img src="./Images/AlumniStories 1.png"alt="Your Image"style="width:100%">
+<img class="image2" src="./Images/bg6.jpg"alt="Your Image"style="width:25%">
+ <div class="text1">
+  <h2>Alumini Stories</h2>
+</div>
+</div>
+
+<div class="text">
+<p>Read our Alumni Stories</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./Images/Alumni 1.webp" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./Images/Alumni 2.webp" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./Images/Alumni 3.webp" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./Images/Alumni 4.webp" alt="Mountains" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="./Images/Alumni 5.webp" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<div class="text2">
+<p>Our 1500+ alumni chapters worldwide are an integral part of our school’s heritage. Our students are regularly placed in the top universities across the globe. In addition to one-on-one sessions with the College Counsellors, our school helps your child prepare for their next big step with guest lectures from industry experts, internships, and more. by exposing them to the best of industry experts and international more</p>
+</div>
+
+
+
+
+
+<div class="cards-wrapper container">
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>26 March 2023</li>
+        </ul>
+        <h1 class="card-title">Navya Kukreja, Class of 2022 Vellore Institute of Technology</h1>
+        <div class="card-sub-title">I, Navya Kukreja, am excited to share my journey as a former student of Oakridge
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>26 March 2023</li>
+        </ul>
+        <h1 class="card-title">Navya Kukreja, Class of 2022 Vellore Institute of Technology</h1>
+        <div class="card-sub-title">I, Navya Kukreja, am excited to share my journey as a former student of Oakridge
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>26 March 2023</li>
+        </ul>
+        <h1 class="card-title">Navya Kukreja, Class of 2022 Vellore Institute of Technology</h1>
+        <div class="card-sub-title">I, Navya Kukreja, am excited to share my journey as a former student of Oakridge
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>26 March 2023</li>
+        </ul>
+        <h1 class="card-title">Navya Kukreja, Class of 2022 Vellore Institute of Technology</h1>
+        <div class="card-sub-title">I, Navya Kukreja, am excited to share my journey as a former student of Oakridge
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>26 March 2023</li>
+        </ul>
+        <h1 class="card-title">Navya Kukreja, Class of 2022 Vellore Institute of Technology</h1>
+        <div class="card-sub-title">I, Navya Kukreja, am excited to share my journey as a former student of Oakridge
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>26 March 2023</li>
+        </ul>
+        <h1 class="card-title">Navya Kukreja, Class of 2022 Vellore Institute of Technology</h1>
+        <div class="card-sub-title">I, Navya Kukreja, am excited to share my journey as a former student of Oakridge
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+</script>
+
+</body>
+</html>

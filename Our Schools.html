@@ -1,0 +1,428 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+
+.content {
+  background-color: #F4D03F;
+  padding: 30px;
+  text-align: left;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #E7E8F2;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #C4C5DE;
+  color: black;
+}
+
+#navbar a.active {
+  background-color:  #AEB6BF;
+  color: #0B0D4A;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+   background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 19.99%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+ 
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+ border: 1px solid #000000;
+}
+
+.image2 {
+  position: relative;
+  top: -600;
+  left: 99;
+border-radius:o;
+}
+
+.image3 {
+  position: relative;
+  top: -630;
+  left: -500;
+border-radius:0;
+}
+
+.text1 {
+font-family: "Fantasy", bold,Lucida Handwriting;
+position: absolute;
+top: 6%;
+left: 25%;
+transform: translate(-50%, -50%);
+color: purple;
+font-size: 27px;
+text-align: center;
+}
+
+.text2 {
+ padding: 15px;
+  width: 700px;
+  height: 200px;
+position: absolute;
+top: 23%;
+left: 80%;
+transform: translate(-70%, -50%);
+color: #0B5345;
+font-size: 23px;
+text-align:left;
+text-indent: 20px;
+  letter-spacing: 2px;
+}
+
+.btn {
+  position: absolute;
+  top: 43%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #F39C12;
+  color: black;
+  font-size: 14px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.btn:hover {
+  background-color: #F5B041;
+  color: black;
+display: inline-block;
+}
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="E:\Folder F\orchid logo 1.jpeg" alt=" logo" style="width:50%">
+</div>
+
+<div id="navbar">
+  <a href="file:///C:/Users/swetha/Desktop/Project%20Website.html">Home</a>
+  <a class="active" href="file:///C:/Users/swetha/Desktop/Our%20Schools.html">Our Schools</a>
+  <a href="file:///C:/Users/swetha/Desktop/News%20&%20Updates.html">News & updates</a>
+<a href="file:///C:/Users/swetha/Desktop/Alumni%20Stories.html">Alumni Stories</a>
+<a href="file:///C:/Users/swetha/Desktop/Contact%20us.html">Contact Us</a>
+<a href="file:///C:/Users/swetha/Desktop/Admissions.html">Admissions</a>
+</div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="E:\Folder F\school  5.jpeg" style="width:100%">
+  <div class="text">GACHIBOWLI</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="E:\Folder F\school 2.jpg" style="width:100%">
+  <div class="text">BENGALURU</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="E:\Folder F\school 3.jpg" style="width:100%">
+  <div class="text">BACHUPALLY</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4/ 5</div>
+  <img src="E:\Folder F\school  4.jpg" style="width:100%">
+  <div class="text">MOHALI</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4/ 5</div>
+  <img src="E:\Folder F\school 1.jpg"  style="width:100%">
+  <div class="text">VISAKHAPATNAM</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+
+ 
+
+<div class="row">
+  <div class="column">
+    <img src="E:\Folder F\oak 2-1.webp" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="E:\Folder F\oak 2-2.webp" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="E:\Folder F\oak 2-3.webp" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="E:\Folder F\oak 2-4.webp" alt="Mountains" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="E:\Folder F\oak 2-5.webp" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+
+
+
+
+<div class="parent">
+  <img class="image1" src="E:\Folder F\bg6.jpg" alt="bg6" style="width:100%">
+  <div class="text1">
+  <h2>Message From Principal</h2>
+</div>
+<div class="text2">
+<p>The vision of Orchids International School, Visakhapatnam is to inspire every individual to unlock their potential by providing outstanding education to make the world a better place. Oakridge International School Visakhapatnam aims to produce compassionate, responsible and innovative global citizens striving for excellence and committed to nurture and progress of society.</p>
+</div>
+<button class="btn">Learn More</button>
+  <img class="image2" src="E:\Folder F\bg7.jpg" alt="bg7" style="width:36%">
+  <img class="image3" src="E:\Folder F\principal.webp" alt="11" style="width:38%">
+</div>
+
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+
+</body>
+</html>

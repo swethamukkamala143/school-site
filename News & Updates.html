@@ -1,0 +1,505 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+
+p {
+  text-align: left;
+  color: purple;
+  font-family: "Fantasy", bold,Lucida Handwriting;
+  padding: 10px;
+  font-size:40px;
+  transform: translate(15%,  70%);
+}
+
+
+
+.content {
+  background-color: #F4D03F;
+  padding: 30px;
+  text-align: left;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #E7E8F2;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #C4C5DE;
+  color: black;
+}
+
+#navbar a.active {
+  background-color:  #AEB6BF;
+  color: #0B0D4A;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+.container1 {
+position: relative;
+}
+/* Style the image */
+.container1 img {
+width: 100%;
+height: auto;
+}
+
+
+
+
+
+
+
+* {
+      margin: 0;
+      text-decoration: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      width: 100%;
+      height: auto;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cards-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 60px;
+      margin-top: 100px;
+    }
+
+    .card {
+      min-width: 300px;
+      max-width: 300px;
+      background-color: #F5EEF8;
+      padding: 2rem;
+    }
+
+    .img-wrapper {
+      margin-top: -60px;
+      width: 300px;
+      height: 300px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-content {
+      min-width: 100%;
+      margin-top: 30px;
+    }
+
+    .ul-list{
+      padding: 0px 0px 0px 15px;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    .card-sub-title {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #ffc33d;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      padding: .8rem;
+    }
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://websiteswetha.s3.us-east-2.amazonaws.com/images/orchid%20logo.jpeg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEN7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRzBFAiEA1ix%2B7zDyCsXc%2FptG%2BTrt2e4z%2BD5QabzJwBnHLxU2v%2BkCICcx2lrgNG1ckqqqk36p3GopivAwkFSFRCyCSBHptaq6Ku0CCIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMDYxMDI2ODcyNDA2IgxPcNpNCJo7TFbKy38qwQKmx57eG%2FbQz%2FDdlfvEMkMab%2FS4LFpMZ6dC6bzW0BsbTvCdu1PHdyPQL5fGNjpdOZhk8YPLmVSK3qvnIZ77T%2FsT5q4HWP9LydBoaMx6O2O9Qq4NWUEDH59dPKXYWE%2BHNCDIFhkDNwkPwM8dRkVMUwjLMXnQYSwqsWy3KdlM4Qsg6sBfyT8p2F%2FazkQ4ItqJd1Dj3gOjet7VFWlplIMEJpcQDc23v%2BdTly6NM9dJW9rtxsDpk3fTqfQe1T1AqRUCog622by7kcquHwvdmUfsjdV2hs1SC7LhExmSXEwRDk9ohSCh1wUHNRkDf%2F5nLMJp%2FTmSPAj0NppsI0sH0qw1IZ5TzdDOKy%2FhFsqZgbpf5L9LncNmoN%2FW7%2BEPAe5d5A8kmx7YE0D1cvR7CdVaQ%2F5OzloV5poKeNPXI4UawWc40gvcXSMwh7DHpgY6swLbRU1PfgveDIM66i7ZXb1vcOZzLgOkuaDlx%2BCTDgpDiNbFc14bJueTEbKkWJoZ1eniVFhCBnU55%2Ff1YhW6wxmqYMu8PbvuF0eCZpUsgMc63OPKHK6CJ7ZzzlHdMEO9wtgbOPyqQgpXJN5mOxTpypFrXLpLtJ6Ck2mNyXiDjtpArTbZLno7KFtvZsTiV9E3nQLD0yGY2WDuBbll6q4HTkaC153hrFiZdJyLoGXdxoqwXfsHVnctCaCBhyDULs422nWqy7j8rkQsf9tv0jRxYjYgauqL%2BHk%2BMtH637cTAHizJ9AFsH0m8RbW856rnUVv9CxT85zGn4QGymw93q8LsJgjQNwjdFNwdA1PqV4X6edLDNoTX%2FaFz7eiK8wd25RBWfLewfBnIAnhqSeGNnbPYEIIJJ%2Br&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230808T060710Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ4NL4FRLL35IOCWW%2F20230808%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=6dbf2462ed9a0aaa49b50851183c3fa24ed2523c66ee684dcca231e0557c7b13" alt=" logo" style="width:50%">
+</div>
+
+<div id="navbar">
+  <a href="file:///C:/Users/swetha/Desktop/Project%20Website.html">Home</a>
+  <a href="file:///C:/Users/swetha/Desktop/Our%20Schools.html">Our Schools</a>
+  <a class="active" href=file:///C:/Users/swetha/Desktop/News%20&%20Updates.html>News & updates</a>
+<a  href=file:///C:/Users/swetha/Desktop/Alumni%20Stories.html>Alumni Stories</a>
+<a href=file:///C:/Users/swetha/Desktop/Contact%20us.html>Contact Us</a>
+<a href="file:///C:/Users/swetha/Desktop/Admissions.html">Admissions</a>
+</div>
+
+
+<div class="container1">
+<img class="image1" src="E:\Folder F\oak 4.jpg"alt="Your Image">
+
+
+
+<p>Orchids International Schools</p>
+
+
+
+
+
+
+
+
+<div class="cards-wrapper container">
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\1.webp" alt="card-img" style="width:100%">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>19 July 2023</li>
+        </ul>
+        <h1 class="card-title">ORCHIDER'S SUMMER INTERNSHIP AT UCSF HELEN DILLER MEDICAL CENTER</h1>
+        <div class="card-sub-title">Orchids International School's Grade 9 student ,Meghana Valluru Raju,has
+        </div>
+       <button class="btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\2.webp" alt="card-img"  style="width:100%">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>27 July 2023</li>
+        </ul>
+        <h1 class="card-title">TRANSFORMING THE EDUCATION BEYOND THE CLASSROOM</h1>
+        <div class="card-sub-title">Today, educationhas gone beyond the four walls of a classroom.
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+</div>
+<br>
+<p>Bachupally</p>
+</br>
+
+
+<div class="cards-wrapper container">
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\3.webp" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>31 July 2023</li>
+        </ul>
+        <h1 class="card-title">Empowering Tomorrow's Leaders!: Orchid Bachupally MUN 2023</h1>
+        <div class="card-sub-title">The Model United Nations(MUN)conference held at Orchid
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\school 2.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>21 July 2023</li>
+        </ul>
+        <h1 class="card-title">How to Help Your Child Adjust to an International School</h1>
+        <div class="card-sub-title">Moving to an international school can be daunting experience,especially
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\oak 5.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>11 July 2023</li>
+        </ul>
+        <h1 class="card-title">Orchids MUN 2023</h1>
+        <div class="card-sub-title">Welcome to Orchids ModelUnited Nations 2022!Nurturing ideas to
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+</div>
+<br>
+<p>Gachibowli</p>
+</br>
+
+<div class="cards-wrapper container">
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\4.webp" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>26 March 2023</li>
+        </ul>
+        <h1 class="card-title">Compassionate Orchids Making A Difference</h1>
+        <div class="card-sub-title">As part CAS, Orchids International school Gachibowli students have been
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+<div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\5.webp" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>24 July 2023</li>
+        </ul>
+        <h1 class="card-title"> The Transforming Power of a Trekking Expedition</h1>
+        <div class="card-sub-title">As the Head of Experimental Learning at our Esteemed institution, I firmly
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+<div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\6.png" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>14 July 2023</li>
+        </ul>
+        <h1 class="card-title">Summer Camp 2023</h1>
+        <div class="card-sub-title">Join the Orchids Gachibowli In-school Summer Camp 2023.Orchids
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+  </div>
+
+<br>
+<p>Bengaluru</p>
+</br>
+
+<div class="cards-wrapper container">
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\7.webp" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>10 July 2023</li>
+        </ul>
+        <h1 class="card-title">Orchids raises the bar high for IB schools with excellent DP results!</h1>
+        <div class="card-sub-title">Outperforms global average 5th year in a row. Keeping up with the legacy 
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+<div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\8.webp" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>18 July 2023</li>
+        </ul>
+        <h1 class="card-title">Unique STEAM approach with MIT Collaborations at Orchids </h1>
+        <div class="card-sub-title">Orchids International, a Nord Anglia Education School in Bengaluru fosters
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+<div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\9.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>14 July 2023</li>
+        </ul>
+        <h1 class="card-title">Summer Camp 2023</h1>
+        <div class="card-sub-title">Orchids International School Bengaluru is hosting a summer camp 
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+  </div>
+
+
+<br>
+<p>Visakhapatnam</p>
+</br>
+
+<div class="cards-wrapper container">
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\9.webp" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>19 July 2023</li>
+        </ul>
+        <h1 class="card-title">Orchids Visakhapatnam's IBDP class of 2023 shines bright with outstanding results</h1>
+        <div class="card-sub-title">It's a proud moment for Orchids International School Visakhapatnam as 
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+<div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\10.webp" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>18 July 2023</li>
+        </ul>
+        <h1 class="card-title">Understanding your child's Learning Style: A guide to parents</h1>
+        <div class="card-sub-title">As parents, we often wonder how our children will learn the best. We try to
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+<div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\9.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>3 July 2023</li>
+        </ul>
+        <h1 class="card-title">Summer LEARNING PROGRAM</h1>
+        <div class="card-sub-title">Get ready for an unforgettable summer adventure! Join us from 22nd
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+  </div>
+
+<br>
+<p>Mohali</p>
+</br>
+
+<div class="cards-wrapper container">
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\11.png" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>19 July 2023</li>
+        </ul>
+        <h1 class="card-title">Orchider's Sweep Victories at International Soccer Cup and Global Cup Goa 2023</h1>
+        <div class="card-sub-title">We are proud to share that our talented students came with flying colors at
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+<div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\12.webp" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>18 July 2023</li>
+        </ul>
+        <h1 class="card-title">From Goals to Habits: Turning Aspirations into Action for our Little Achievers!</h1>
+        <div class="card-sub-title">As the Nurturing Guardians of the budding talents, we understand that
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+<div class="card">
+      <div class="img-wrapper">
+        <img src="E:\Folder F\News & Updates\9.jpg" alt="card-img">
+      </div>
+      <div class="card-content">
+        <ul class="ul-list">
+          <li>3 July 2023</li>
+        </ul>
+        <h1 class="card-title">Summer CAMP 2023</h1>
+        <div class="card-sub-title">Orchids International School Mohali is hosting a summer camp 2023
+        </div>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+</script>
+
+</body>
+</html>

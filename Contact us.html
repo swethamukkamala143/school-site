@@ -1,0 +1,319 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+.content {
+  background-color: #F4D03F;
+  padding: 30px;
+  text-align: left;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #E7E8F2;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #C4C5DE;
+  color: black;
+}
+
+#navbar a.active {
+   background-color:  #AEB6BF;
+  color: #0B0D4A;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+ 
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+ border: 1px solid #000000;
+}
+
+
+
+.image2 {
+  position: relative;
+  top: -400;
+  left: 1000;
+  height: 170.5;
+border-radius:o;
+}
+
+.text1 {
+font-family: "Fantasy", bold,Lucida Handwriting;
+position: absolute;
+top: 33%;
+left: 78.5%;
+transform: translate(-50%, -50%);
+color: white;
+font-size: 27px;
+text-align: center;
+}
+
+
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #660066;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #990099;
+}
+
+.container {
+width:45%;
+  border-radius: 5px;
+  background-color: #E7E8F2;
+  padding: 20px;
+  margin: 20px;
+ margin-top: -100px;
+font-size: 20px;
+}
+
+
+
+
+.text11 {
+font-family: bookman;
+position: absolute;
+top: 175%;
+left: 73.5%;
+transform: translate(-50%, -50%);
+color: black;
+font-size: 20px;
+text-align: justify;
+width: 700px;
+  height: 500px;
+}
+
+
+
+
+div.gallery {
+  position: absolute;
+  top: 250%;
+  left: 73.5%;
+  margin: 5px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  float: left;
+  width: 700px;
+  
+  
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  width: 700px;
+  height: 350px;
+  padding: 15px;
+  text-align: center;
+  background-color: Linen;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="E:\Folder F\orchid logo 1.jpeg" alt=" logo" style="width:50%">
+</div>
+
+<div id="navbar">
+  <a href="file:///C:/Users/swetha/Desktop/Project%20Website.html">Home</a>
+  <a href="file:///C:/Users/swetha/Desktop/admissions.html">Our Schools</a>
+  <a href=file:///C:/Users/swetha/Desktop/News%20&%20Updates.html>News & updates</a>
+<a href=file:///C:/Users/swetha/Desktop/Alumni%20Stories.html>Alumni Stories</a>
+<a class="active" href=file:///C:/Users/swetha/Desktop/Contact%20us.html>Contact Us</a>
+<a href=file:///C:/Users/swetha/Desktop/Admissions.html>Admissions</a>
+</div>
+
+<div class="parent">
+<img class="image1" src="E:\Folder F\contactUs 1.webp"alt="Your Image" style="width:100%">
+<img class="image2" src="E:\Folder F\bg9.jpeg"alt="Your Image" style="width:27%">
+ <div class="text1">
+  <h2>Contact Us</h2>
+</div>
+</div>
+
+
+
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+   <label for="Email">Email</label>
+    <input type="text" id="Email" name="Email" placeholder="Your email..">
+
+    <label for="Phone">Phone</label>
+    <input type="text" id="Phone" name="Phone" placeholder="Your phone number">
+   
+    <label for="ChildDOB">Child DOB</label>
+    <input type="text" id="ChildDOB" name="ChildDOB" placeholder="Date/Month/Year">
+
+       <label for="AdmissionForGrade">Admission For Grade</label>
+    <select id="AdmissionForGrade" name="grade">
+     <option value="Nursery">Nursery</option>
+      <option value="PP1">PP1</option>
+       <option value="PP2">PP2</option>
+      <option value="Grade 1">Grade 1</option>
+      <option value="Grade 2">Grade 2</option>
+      <option value="Grade 3">Grade 3</option>
+      <option value="Grade 4">Grade 4</option>
+      <option value="Grade 5">Grade 5</option>
+      <option value="Grade 6">Grade 6</option>
+      <option value="Grade 7">Grade 7</option>
+      <option value="Grade 8">Grade 8</option>
+      <option value="Grade 9">Grade 9</option>
+    </select>
+
+    <label for="CurrentSchool">Current School</label>
+    <input type="text" id="CurrentSchool" name="CurrentSchool" placeholder="Your present schooling">
+
+      <label for="country">Country</label>
+    <select id="country" name="City">
+      <option value="Gachibowli">Gachibowli</option>
+      <option value="Bachupally">Bachupally</option>
+      <option value="Bengaluru">Bengaluru</option>
+      <option value="Mohali">Mohali</option>
+      <option value="Visakhapatnam">Visakhapatnam</option>
+    </select>
+
+    <label for="Message">Message</label>
+    <textarea id="Message" name="Message" placeholder="Write your Message..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+<div class="text11">
+  <p>As one of the best international schools in Visakhapatnam, Orchids International School, Visakhapatnam is a part of Nord Anglia Education, where your child will be a part of a global community of 67,000+ students across 30 countries. We educate your child for the future, enhancing learning through collaborations with the world’s best organisations including MIT(Massachusetts Institute of Technology), UNICEF and Juilliard. Individually tailoring our approach to your child enables them to achieve outstanding academic results whilst developing the skills and mindset to thrive in a changing world.
+<br>
+
+Our approach to learning is built on one core belief: we can help your child achieve more. We embrace innovative approaches to ensure that your child thrives as a student and as a global citizen. We take the time to discover their passions, and tap into their strengths. Our flexible approach to learning allows them to adapt to each student’s needs and nurture them into life-long learners.
+<br>
+
+With Virtual School Experience, wherever your family is in the world, you can access our outstanding education and world-class teaching. Our schools, and the one-of-a-kind opportunities we create for your child inside and outside the classroom, enrich learning, instill life-long memories and a deep sense of achievement. We welcome your family to become a valued member of our vibrant global community.</p>
+</div>
+
+
+
+
+<div class="gallery">
+  <a target="_blank" href=""E:\Folder F\school 6.jpg"">
+    <img src="E:\Folder F\school 6.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Orchids International School </div>
+</div>
+
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+</script>
+
+</body>
+</html>
